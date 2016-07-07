@@ -53,7 +53,7 @@ if (!BUNDLE) {
 
 module.exports = {
     entry: {
-        'inspire-tree': './src/tree.js'
+        'inspire-tree': './src/tree.ts'
     },
     externals: externals,
     output: {
@@ -80,9 +80,12 @@ module.exports = {
         library: 'InspireTree',
         libraryTarget: 'umd'
     },
+    resolve: {
+        extensions: ['', '.ts', '.js']
+    },
     module: {
         loaders: [{
-            loader: 'babel?presets[]=es2015'
+            test: /\.ts$/, loader: 'babel-loader!ts-loader'
         }, {
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))

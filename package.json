@@ -4,7 +4,9 @@
   "description": "Inspired JavaScript Tree UI Component",
   "repository": "https://github.com/helion3/inspire-tree",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "ts-loader": "^0.8.2"
+  },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel-core": "^6.9.1",
@@ -36,6 +38,7 @@
     "sinon": "^1.17.2",
     "style-loader": "^0.13.0",
     "svg-inline-loader": "^0.6.0",
+    "typescript": "^1.8.10",
     "virtual-dom": "^2.1.1",
     "webpack": "^1.13.0"
   },

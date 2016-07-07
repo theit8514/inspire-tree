@@ -1,5 +1,13 @@
 # Changes to Inspire Tree
 
+- @todo move util-type methods to a lib file?
+- @todo look into bucket performance problem
+
+- @todo add types to remaining properties/methods
+- @todo publish changes to babel add module export plugin somewhere
+
+- `expandParents` no longer mapped to the `tree` api since it's useless at the root level.
+
 # 1.9.1
 
 - Fixed css somehow missed by deploy script.
